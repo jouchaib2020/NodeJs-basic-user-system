@@ -1,15 +1,30 @@
 <svg width="250" height="250" viewBox="0 0 200 200">
   <g transform="translate(100 100)">
 <style>
-  body {
+body {
     background: Lavender;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-.st0{
-  fill:#E80C56;
+}
+
+
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #9C27B0, #E040FB);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    position: fixed;
+    right: 10;
+    bottom: 10;
 }
 </style>
 <path transform="translate(-50 -50)" class="st0" d="M94.4,35.3c0-0.3-0.2-0.6-0.5-0.6c-0.4-0.1-0.8-0.2-1.2-0.2c-0.2,0-0.4-0.1-0.5-0.2c-0.1-0.1-0.3-0.2-0.3-0.3
@@ -204,5 +219,5 @@ C91.5,35.6,91.5,35.7,91.5,35.8z"/>
 </g>
 </svg>
 <form action="/logout?_method=DELETE" method="POST">
-  <button type="submit">Log Out</button>
+  <button type="submit" class="submit">Log Out</button>
 </form>
